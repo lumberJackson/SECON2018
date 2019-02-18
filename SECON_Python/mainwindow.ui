@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>401</y>
+       <width>600</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="debugTab">
+      <attribute name="title">
+       <string>Debug</string>
+      </attribute>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>596</width>
+         <height>172</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>594</width>
+          <height>170</height>
+         </rect>
+        </property>
+        <widget class="QTextEdit" name="debugText">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>594</width>
+           <height>170</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="variablesTab">
+      <attribute name="title">
+       <string>Variables</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QGraphicsView" name="robotView">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>600</width>
+       <height>400</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="rangefinder0">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>132</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPlainTextEdit" name="rangefinder0_value">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>2</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #EEEEEE;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder0_label">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string> R0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder0_label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>1</y>
+        <width>21</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>in</string>
+      </property>
+     </widget>
+     <zorder>rangefinder0_label</zorder>
+     <zorder>rangefinder0_label_2</zorder>
+     <zorder>rangefinder0_value</zorder>
+    </widget>
+    <widget class="QGroupBox" name="rangefinder1">
+     <property name="geometry">
+      <rect>
+       <x>438</x>
+       <y>100</y>
+       <width>132</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPlainTextEdit" name="rangefinder1_value">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>2</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #EEEEEE;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder1_label">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string> R1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder1_label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>1</y>
+        <width>21</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="rangefinder3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>265</y>
+       <width>132</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPlainTextEdit" name="rangefinder3_value">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>2</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #EEEEEE;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder3_label">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string> R3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder3_label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>1</y>
+        <width>21</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="rangefinder2">
+     <property name="geometry">
+      <rect>
+       <x>438</x>
+       <y>265</y>
+       <width>132</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPlainTextEdit" name="rangefinder2_value">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>2</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #EEEEEE;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder2_label">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string> R2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder2_label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>1</y>
+        <width>21</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="rangefinder4">
+     <property name="geometry">
+      <rect>
+       <x>234</x>
+       <y>30</y>
+       <width>132</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPlainTextEdit" name="rangefinder4_value">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>2</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #EEEEEE;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder4_label">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string> R4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rangefinder4_label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>1</y>
+        <width>21</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="object">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>100</y>
+       <width>200</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="object_2">
+     <property name="geometry">
+      <rect>
+       <x>399</x>
+       <y>107</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #000000; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="object_3">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>107</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #000000; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="object_4">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>273</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #000000; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="object_5">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>273</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #000000; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="object_6">
+     <property name="geometry">
+      <rect>
+       <x>289</x>
+       <y>80</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #000000; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="microswitch3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>283</y>
+       <width>43</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="microswitch3_value">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>U3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="microswitch2">
+     <property name="geometry">
+      <rect>
+       <x>337</x>
+       <y>283</y>
+       <width>43</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="microswitch2_value">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>U2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="microswitch0">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>83</y>
+       <width>43</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="microswitch0_value">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>U0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="microswitch1">
+     <property name="geometry">
+      <rect>
+       <x>337</x>
+       <y>83</y>
+       <width>43</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #CCCCCC; border: 1px solid black;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="microswitch1_value">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>41</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px solid;</string>
+      </property>
+      <property name="text">
+       <string>U1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
